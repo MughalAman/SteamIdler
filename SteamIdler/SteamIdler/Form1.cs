@@ -28,9 +28,15 @@ namespace SteamIdler
                 File.WriteAllBytes(Application.StartupPath + "/Steamworks.NET.dll", Resources.Steamworks_NET);
                 MessageBox.Show("Created missing DLL files! missing file: Steamworks.NET.dll");
             }
-            //Load saved settings | Add saved ids to textbox and change checkboxes value  
-            AppIdTb.Text = SteamIdler.Properties.Settings.Default.AppIds;
-            saveIdsCb.Checked = SteamIdler.Properties.Settings.Default.SaveIdsCbChecked;
+
+            if(SteamIdler.Properties.Settings.Default.FirstLaunch == false)
+            {
+                //Load saved settings | Add saved ids to textbox and change checkboxes value  
+                AppIdTb.Text = SteamIdler.Properties.Settings.Default.AppIds;
+                saveIdsCb.Checked = SteamIdler.Properties.Settings.Default.SaveIdsCbChecked;
+            }
+
+            SteamIdler.Properties.Settings.Default.FirstLaunch = false;
         }
 
 

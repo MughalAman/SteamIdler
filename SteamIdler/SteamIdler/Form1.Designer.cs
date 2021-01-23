@@ -83,7 +83,7 @@
             this.Vlabel.Name = "Vlabel";
             this.Vlabel.Size = new System.Drawing.Size(103, 15);
             this.Vlabel.TabIndex = 3;
-            this.Vlabel.Text = "Version 1.0.0.4";
+            this.Vlabel.Text = "Version 1.0.0.6";
             // 
             // pb1
             // 
