@@ -37,6 +37,7 @@
             this.pb1 = new System.Windows.Forms.PictureBox();
             this.ToolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.saveIdsCb = new System.Windows.Forms.CheckBox();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pb1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -79,19 +80,19 @@
             // 
             this.Vlabel.AutoSize = true;
             this.Vlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Vlabel.Location = new System.Drawing.Point(12, 59);
+            this.Vlabel.Location = new System.Drawing.Point(12, 77);
             this.Vlabel.Name = "Vlabel";
             this.Vlabel.Size = new System.Drawing.Size(103, 15);
             this.Vlabel.TabIndex = 3;
-            this.Vlabel.Text = "Version 1.0.0.6";
+            this.Vlabel.Text = "Version 1.2.0.0";
             // 
             // pb1
             // 
             this.pb1.BackColor = System.Drawing.Color.Transparent;
             this.pb1.Image = ((System.Drawing.Image)(resources.GetObject("pb1.Image")));
-            this.pb1.Location = new System.Drawing.Point(255, 38);
+            this.pb1.Location = new System.Drawing.Point(263, 69);
             this.pb1.Name = "pb1";
-            this.pb1.Size = new System.Drawing.Size(61, 46);
+            this.pb1.Size = new System.Drawing.Size(46, 34);
             this.pb1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pb1.TabIndex = 4;
             this.pb1.TabStop = false;
@@ -99,22 +100,38 @@
             // saveIdsCb
             // 
             this.saveIdsCb.AutoSize = true;
+            this.saveIdsCb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.saveIdsCb.ForeColor = System.Drawing.Color.White;
-            this.saveIdsCb.Location = new System.Drawing.Point(15, 37);
+            this.saveIdsCb.Location = new System.Drawing.Point(15, 46);
             this.saveIdsCb.Name = "saveIdsCb";
-            this.saveIdsCb.Size = new System.Drawing.Size(145, 17);
+            this.saveIdsCb.Size = new System.Drawing.Size(163, 19);
             this.saveIdsCb.TabIndex = 5;
             this.saveIdsCb.Text = "Save appids for next time";
             this.saveIdsCb.UseVisualStyleBackColor = true;
             this.saveIdsCb.CheckedChanged += new System.EventHandler(this.saveIdsCb_CheckedChanged);
             this.saveIdsCb.MouseHover += new System.EventHandler(this.saveIdsCb_MouseHover);
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(253, 39);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(56, 24);
+            this.button2.TabIndex = 6;
+            this.button2.Text = "Settings";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
-            this.ClientSize = new System.Drawing.Size(321, 83);
+            this.ClientSize = new System.Drawing.Size(321, 101);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.saveIdsCb);
             this.Controls.Add(this.Vlabel);
             this.Controls.Add(this.AppIdTb);
@@ -127,7 +144,7 @@
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.ShowIcon = false;
-            this.Text = "SteamIdl3r";
+            this.Text = "SteamIdler";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pb1)).EndInit();
             this.ResumeLayout(false);
@@ -144,6 +161,7 @@
         private System.Windows.Forms.PictureBox pb1;
         private System.Windows.Forms.ToolTip ToolTip1;
         private System.Windows.Forms.CheckBox saveIdsCb;
+        private System.Windows.Forms.Button button2;
     }
 }
 

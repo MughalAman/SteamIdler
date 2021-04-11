@@ -11,5 +11,20 @@
     <Setting Name="FirstLaunch" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>
     </Setting>
+    <Setting Name="Apikey" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Theme" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="BackgroundColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">54, 57, 63</Value>
+    </Setting>
+    <Setting Name="ForegroundColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">White</Value>
+    </Setting>
+    <Setting Name="TextboxColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">32, 34, 37</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

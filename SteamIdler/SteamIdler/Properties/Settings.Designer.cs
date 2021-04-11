@@ -58,5 +58,65 @@ namespace SteamIdler.Properties {
                 this["FirstLaunch"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Apikey {
+            get {
+                return ((string)(this["Apikey"]));
+            }
+            set {
+                this["Apikey"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int Theme {
+            get {
+                return ((int)(this["Theme"]));
+            }
+            set {
+                this["Theme"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("54, 57, 63")]
+        public global::System.Drawing.Color BackgroundColor {
+            get {
+                return ((global::System.Drawing.Color)(this["BackgroundColor"]));
+            }
+            set {
+                this["BackgroundColor"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        public global::System.Drawing.Color ForegroundColor {
+            get {
+                return ((global::System.Drawing.Color)(this["ForegroundColor"]));
+            }
+            set {
+                this["ForegroundColor"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("32, 34, 37")]
+        public global::System.Drawing.Color TextboxColor {
+            get {
+                return ((global::System.Drawing.Color)(this["TextboxColor"]));
+            }
+            set {
+                this["TextboxColor"] = value;
+            }
+        }
     }
 }

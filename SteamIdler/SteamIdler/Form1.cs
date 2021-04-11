@@ -106,5 +106,18 @@ namespace SteamIdler
                 Debug.WriteLine(SteamIdler.Properties.Settings.Default.SaveIdsCbChecked);
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if ((Application.OpenForms["SettingsForm"] as SettingsForm) != null)
+            {
+                
+            }
+            else
+            {
+                SettingsForm Sform = new SettingsForm();
+                Sform.Show();
+            }
+        }
     }
 }
