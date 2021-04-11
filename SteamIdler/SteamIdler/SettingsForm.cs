@@ -84,8 +84,9 @@ namespace SteamIdler
                     Settings.Default.Save();
                     break;
             }
-
+            Settings.Default.Apikey = textBox1.Text;
             ReloadForm();
+            //Form1.loadTheme(); not sure if this is working.. test on windows
         }
 
         private void ReloadForm()

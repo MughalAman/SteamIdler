@@ -10,6 +10,8 @@ namespace SteamIdler
 {
     public partial class Form1 : Form
     {
+
+        private string apiKey;
         public Form1()
         {
             InitializeComponent();
@@ -37,6 +39,8 @@ namespace SteamIdler
             }
 
             SteamIdler.Properties.Settings.Default.FirstLaunch = false;
+
+            loadTheme();
         }
 
 
@@ -118,6 +122,21 @@ namespace SteamIdler
                 SettingsForm Sform = new SettingsForm();
                 Sform.Show();
             }
+        }
+
+        public void loadTheme()
+        {
+            apiKey = Properties.Settings.Default.Apikey;
+            this.BackColor = Settings.Default.BackgroundColor;
+            button1.BackColor = Settings.Default.BackgroundColor;
+            button1.ForeColor = Settings.Default.ForegroundColor;
+            button2.BackColor = Settings.Default.BackgroundColor;
+            button2.ForeColor = Settings.Default.ForegroundColor;
+            label1.ForeColor = Settings.Default.ForegroundColor;
+            Vlabel.ForeColor = Settings.Default.ForegroundColor;
+            AppIdTb.ForeColor = Settings.Default.ForegroundColor;
+            AppIdTb.BackColor = Settings.Default.TextboxColor;
+            saveIdsCb.ForeColor = Settings.Default.ForegroundColor;
         }
     }
 }
