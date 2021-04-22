@@ -35,6 +35,7 @@ namespace SteamIdler
             label3.ForeColor = Settings.Default.ForegroundColor;
             button1.BackColor = Settings.Default.TextboxColor;
             button1.ForeColor = Settings.Default.ForegroundColor;
+            comboBox1.SelectedIndex = Settings.Default.SettingsComboIndex;
 
 
             //Change this to switch statement
@@ -63,7 +64,6 @@ namespace SteamIdler
                     Settings.Default.TextboxColor = Color.FromArgb(32, 34, 37);
 
                     Settings.Default.Theme = 0;
-                    Settings.Default.Save();
                     break;
 
                 case 1:
@@ -72,7 +72,6 @@ namespace SteamIdler
                     Settings.Default.TextboxColor = Color.FromArgb(225, 237, 234);
 
                     Settings.Default.Theme = 1;
-                    Settings.Default.Save();
                     break;
 
                 case 2:
@@ -81,12 +80,13 @@ namespace SteamIdler
                     Settings.Default.TextboxColor = Color.FromArgb(28, 28, 28);
 
                     Settings.Default.Theme = 2;
-                    Settings.Default.Save();
                     break;
             }
             Settings.Default.Apikey = textBox1.Text;
+            Settings.Default.SettingsComboIndex = comboBox1.SelectedIndex;
+            Settings.Default.Save();
             ReloadForm();
-            //Form1.loadTheme(); not sure if this is working.. test on windows
+            Program.form1.loadTheme();
         }
 
         private void ReloadForm()

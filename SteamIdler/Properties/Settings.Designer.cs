@@ -118,5 +118,17 @@ namespace SteamIdler.Properties {
                 this["TextboxColor"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int SettingsComboIndex {
+            get {
+                return ((int)(this["SettingsComboIndex"]));
+            }
+            set {
+                this["SettingsComboIndex"] = value;
+            }
+        }
     }
 }
