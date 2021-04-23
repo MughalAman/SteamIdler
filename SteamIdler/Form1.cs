@@ -5,7 +5,6 @@ using System.Linq;
 using System.Windows.Forms;
 using SteamIdler.Properties;
 
-
 namespace SteamIdler
 {
     public partial class Form1 : Form
@@ -18,7 +17,7 @@ namespace SteamIdler
         }
 
         private void Form1_Load(object sender, EventArgs e)
-        {
+        {   
             //Check if steam_api.dll & Steamworks.NET.dll file exist if not then create the file from memory.
             if (!File.Exists(Application.StartupPath + "/steam_api.dll"))
             {
@@ -41,6 +40,11 @@ namespace SteamIdler
             SteamIdler.Properties.Settings.Default.FirstLaunch = false;
 
             loadTheme();
+
+            if(Settings.Default.Apikey != "" && Settings.Default.SteamId != "")
+            {
+                string apiUri = "http://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key=" + Settings.Default.Apikey + "&steamid=" + Settings.Default.SteamId + "&format=json&include_appinfo=true";
+            }
         }
 
 

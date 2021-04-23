@@ -36,6 +36,7 @@ namespace SteamIdler
             button1.BackColor = Settings.Default.TextboxColor;
             button1.ForeColor = Settings.Default.ForegroundColor;
             comboBox1.SelectedIndex = Settings.Default.SettingsComboIndex;
+            textBox1.Text = Settings.Default.Apikey;
 
 
             //Change this to switch statement
