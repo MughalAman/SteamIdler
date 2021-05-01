@@ -29,8 +29,11 @@ namespace SteamIdler
             this.BackColor = Settings.Default.BackgroundColor;
             textBox1.BackColor = Settings.Default.TextboxColor;
             textBox1.ForeColor = Settings.Default.ForegroundColor;
+            textBox2.BackColor = Settings.Default.TextboxColor;
+            textBox2.ForeColor = Settings.Default.ForegroundColor;
             comboBox1.BackColor = Settings.Default.TextboxColor;
             comboBox1.ForeColor = Settings.Default.ForegroundColor;
+            label1.ForeColor = Settings.Default.ForegroundColor;
             label2.ForeColor = Settings.Default.ForegroundColor;
             label3.ForeColor = Settings.Default.ForegroundColor;
             button1.BackColor = Settings.Default.TextboxColor;
@@ -84,6 +87,7 @@ namespace SteamIdler
                     break;
             }
             Settings.Default.Apikey = textBox1.Text;
+            Settings.Default.SteamId = textBox2.Text;
             Settings.Default.SettingsComboIndex = comboBox1.SelectedIndex;
             Settings.Default.Save();
             ReloadForm();
@@ -95,8 +99,11 @@ namespace SteamIdler
             this.BackColor = Settings.Default.BackgroundColor;
             textBox1.BackColor = Settings.Default.TextboxColor;
             textBox1.ForeColor = Settings.Default.ForegroundColor;
+            textBox2.BackColor = Settings.Default.TextboxColor;
+            textBox2.ForeColor = Settings.Default.ForegroundColor;
             comboBox1.BackColor = Settings.Default.TextboxColor;
             comboBox1.ForeColor = Settings.Default.ForegroundColor;
+            label1.ForeColor = Settings.Default.ForegroundColor;
             label2.ForeColor = Settings.Default.ForegroundColor;
             label3.ForeColor = Settings.Default.ForegroundColor;
             button1.BackColor = Settings.Default.TextboxColor;
